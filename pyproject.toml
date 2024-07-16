@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "jaws-transfers"
+version = "0.1.0"
+description = ""
+authors = ["Mario Melara <maamelara@gmail.com>"]
+readme = "README.md"
+packages = [{include = "jaws_transfers"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+celery = "^5.4.0"
+kombu = "^5.3.7"
+pika = "^1.3.2"
+redis = "^5.0.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
