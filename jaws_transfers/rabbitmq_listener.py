@@ -1,7 +1,7 @@
 import pika
 import json
-from config import Config
 
+from jaws_transfers.config import Config
 from jaws_transfers.tasks import rsync_transfer
 
 def create_connection(config_file=None):

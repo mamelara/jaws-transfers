@@ -1,0 +1,6 @@
+Bootstrap: docker
+From: redis:latest
+
+%post
+    apt-get update && apt-get install -y locales-all
+

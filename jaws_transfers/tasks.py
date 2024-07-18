@@ -1,5 +1,5 @@
 import subprocess
-from jaws_transfers.celery import app
+from jaws_transfers.celery_app import app
 
 @app.task(bind=True)
 def rsync_transfer(self, source, destination):
